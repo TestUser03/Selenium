@@ -17,6 +17,8 @@ jobs:
   - script: sudo apt install nodejs
     displayName: 'npm install'
   - script: sudo npm install -g npm
+    displayName: 'npm install selenium-webdriver '
+  - script: sudo npm install -g npm
     displayName: 'npm test'
   - script: sudo node test/search_uopolo.js
     continueOnError: true
