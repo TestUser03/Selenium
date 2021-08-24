@@ -16,7 +16,7 @@ describe('app', () => {
         await remote.findById('srchbtn').click();
         await sleep(1000);
         
-        expect(await remote.findDisplayedById('yschsp').getAttribute('value')).to.equal('うおぽぉ')
+        expect(await remote.findDisplayedById('yschsp').getAttribute('value')).to.equal('test')
         const data = await remote.takeScreenshot()
         fs.writeFileSync('./uopolo.png', data, 'base64');
     });
