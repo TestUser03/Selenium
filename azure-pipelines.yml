@@ -22,5 +22,3 @@ jobs:
     displayName: 'npm test'
   - script: sudo node test/search_uopolo.js
     continueOnError: true
-  - task: PublishTestResults@2
-    displayName: 'Publish Artifact: drop'
