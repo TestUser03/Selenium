@@ -23,6 +23,4 @@ jobs:
   - script: sudo node test/search_uopolo.js
     continueOnError: true
   - task: PublishTestResults@2
-    inputs:
-      testRunner: JUnit
-      testResultsFiles: junit-results.xml
+    displayName: 'Publish Artifact: drop'
